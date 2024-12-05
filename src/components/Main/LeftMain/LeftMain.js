@@ -107,7 +107,7 @@ const LeftMain = () => {
             </div>
         </div>
       </div>
-      <img src='card.jpg' className='mt-3 img-fluid' style={{height:"220px"}}/>
+      <img src='./Card.jpg' className='mt-3 img-fluid' style={{height:"220px"}}/>
       <div className='mt-3 d-flex justify-content-between align-items-center'>
             <h4 className='fw-bold text-end dark-blue mt-2'>العمليات المالية</h4>
             <div className='d-flex align-items-center'>

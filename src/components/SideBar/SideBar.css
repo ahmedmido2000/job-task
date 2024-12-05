@@ -1,0 +1,82 @@
+.greyColor{
+    color: #5F687D;
+}  
+.hovers{
+    cursor: pointer;
+}
+.hovers:hover{
+    transition: all 0.2s ease-in-out;
+    opacity: 0.8;
+}
+  .menu {
+    list-style: none !important;
+    padding: 0;
+    margin: 0;
+  }
+  .menu-item {
+    position: relative; /* Ensures dropdown aligns correctly */
+  }
+  .dropdown-menu {
+    list-style: none;
+    padding: 10px;
+    margin: 5px 0 0; /* Space below the toggle button */
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    display: none; /* Hidden by default */
+    position: absolute; /* Position relative to parent */
+    left: 0;
+    top: 100%; /* Appears below the toggle button */
+    z-index: 1000; /* Ensures it appears above other elements */
+    width: 200px; /* Adjust as needed */
+  }
+  .menu-item .dropdown-menu li:hover {
+    background-color: #e9ecef;
+  }
+  .menu-item.open .dropdown-menu {
+    display: block;
+    padding: 10px;
+  }
+  .dropdown-toggle::after{
+    display: none !important;
+  }
+  
+.extra-features{
+    border-radius: 15px;
+    background: linear-gradient(#838AFF, #5243FF)
+}
+.bar-item , .bar-item button{
+    color:#5F687D ;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.bar-item.active, .bar-item:hover, .bar-item:hover button, .bar-item.active button{
+    background-color: #0064FF;
+    color: #fff !important;
+}
+/* Add a smooth transition when showing or hiding the sidebar */
+@media (max-width:992px) {
+    .sidebar-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 1050; /* Ensure it appears above other content */
+      }
+}
+  
+  .sidebar-content {
+    height: 100%;
+    overflow-y: auto;
+  }
+  .sidebar-content::-webkit-scrollbar{
+    display: none;
+  }
+  
+  @media (max-width: 992px) {
+    .sidebar-container {
+      width: 75%; /* Adjust the width for smaller screens */
+    }
+  }
+  

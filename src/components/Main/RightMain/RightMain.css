@@ -1,0 +1,162 @@
+.dark-blue{
+    color: #233365;
+}
+.fs-40{
+    font-size: 40px;
+}
+.sky-blue-btn{
+    background-color: #0083FF !important;
+    color: #fff !important;
+}
+.sky-blue-btn:hover{
+    transition: all 0.2s;
+    opacity: 0.8;
+}
+.dark-blue-btn{
+    background-color: #233365 !important;
+    color: #fff !important;
+}
+.dark-blue-btn:hover{
+    transition: all 0.2s;
+    opacity: 0.8;
+}
+.vinancial-btn{
+    color: #555;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.vinancial-btn.active{
+    color: #fff;
+    background-color: #233365;
+}
+.date-filter{
+    color: #555;
+    cursor: pointer;
+}
+.date-filter.active{
+    color: #233365;
+    border-bottom: 2px solid #233365;
+}
+
+/* Container */
+.square-container-parent{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    position: fixed;
+    background-color: #fff;
+    padding-top: 200px;
+    z-index: 11111111111111111;
+}
+.square-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    top: 50%;
+    width: 100px;
+    z-index: 10;
+    height: 100px;
+    margin: auto;
+  }
+  
+  /* Square Styles */
+  .square {
+    width: 45px;
+    height: 45px;
+    opacity: 0.8;
+    animation: colorFade 2s infinite;
+    transform-origin: center;
+  }
+  
+  /* Colors for the squares */
+  .blue {
+    background-color: #7df1ff;
+    animation-delay: 1s;
+  }
+  
+  .purple {
+    background-color: #c5a2ff;
+    animation-delay: 0.5s;
+  }
+  
+  .cyan {
+    background-color: #7df1ff;
+    animation-delay: 0.5s;
+  }
+  
+  .violet {
+    background-color: #c5a2ff;
+    animation-delay: 1s;
+  }
+  
+  /* Animation keyframes */
+  @keyframes colorFade {
+    0%, 100% {
+      opacity: 0.5;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+  }
+  .custom-notification {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  z-index: 9999;
+  width: 74vw;
+  animation: slideIn 0.5s ease;
+}
+
+.notification-icon {
+  color: #007773;
+  margin-right: 12px;
+  margin-left: 15px;
+}
+.notification-icon img{
+    width: 40px;
+    height: 40px;
+}
+
+.notification-text {
+  flex-grow: 1;
+  font-size: 14px;
+  color: #000;
+  text-align: start;
+}
+
+.notification-text strong {
+  color: #007773;
+}
+
+.notification-close {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #999;
+  cursor: pointer;
+}
+
+.notification-close:hover {
+  color: #000;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
